@@ -41,14 +41,13 @@ class PopplerQt5Bindings(PyQtBindings):
     @staticmethod
     def run_pkg_config(option):
         output = subprocess.check_output(
-            ['pkg-config', option, 'poppler-qt5'],
-            text=True)
+            ['pkg-config', option, 'poppler-qt5'])
         return output.rstrip()
 
     def apply_user_defaults(self, tool):
         # Set include_dirs, library_dirs and libraries based on pkg-config data
-        cflags = self.run_pkg_config('--cflags-only-I').split()
-        libs = self.run_pkg_config('--libs').split()
+        cflags = '-IC:/Program Files/poppler/include/poppler'
+        libs = '-LC:/Program Files/poppler/lib'
         self.include_dirs.extend(
             flag[2:] for flag in cflags if flag.startswith('-I'))
         self.library_dirs.extend(
@@ -60,7 +59,7 @@ class PopplerQt5Bindings(PyQtBindings):
         if self.poppler_version is not None:
             poppler_qt5_version = self.poppler_version
         else:
-            poppler_qt5_version = self.run_pkg_config('--modversion')
+            poppler_qt5_version = '0.82.0'
         poppler_qt5_version = tuple(map(int, poppler_qt5_version.split('.')))
         python_poppler_qt5_version = self.project.version_str.split('.')
         format_dict = {
