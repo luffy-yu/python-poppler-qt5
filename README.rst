@@ -40,7 +40,7 @@ e.g. ``C:/Users/luffy/Downloads/test``
 
 - python-poppler-qt5
 
-e.g. ``C:/Users/luffy/python-poppler-qt5``
+e.g. ``C:/Users/luffy/Downloads/python-poppler-qt5``
 
 Installation
 ------------
@@ -195,7 +195,7 @@ Output::
     sip-build: 'nmake' failed returning 2
     
     
-Edit ``C:/Users/luffy/python-poppler-qt5/build/popplerqt5/popplerqt5.pro``
+Edit ``C:/Users/luffy/Downloads/python-poppler-qt5/build/popplerqt5/popplerqt5.pro``
 
 From::
     
