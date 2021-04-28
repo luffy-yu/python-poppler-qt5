@@ -180,7 +180,7 @@ Switch to ``Anaconda Prompt(miniconda3)`` window
 
 Enter::
     
-    cd C:\Users\luffy\python-poppler-qt5
+    cd C:\Users\luffy\Downloads\python-poppler-qt5
     sip-build
     
 Output::
@@ -222,7 +222,7 @@ Open ``x64 Native Tools Command Prompt for VS 2019``
 
 Enter::
 
-    cd C:\Users\luffy\python-poppler-qt5\build
+    cd C:\Users\luffy\Downloads\python-poppler-qt5\build
     nmake
     nmake install
     
