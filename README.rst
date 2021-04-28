@@ -1,6 +1,6 @@
-=========================================
-Installation Guide in Windows with VS2019
-=========================================
+===========================================
+Installation Guide in Windows10 with VS2019
+===========================================
 Updated at April 28, 2021
 
 **This is based on branch sip5.**
@@ -92,6 +92,8 @@ Open the Anaconda Prompt(miniconda3)
 Enter::
 
     conda update -f conda-update-base--prune.yml --prune
+    
+refer: https://github.com/luffy-yu/python-poppler-qt5/blob/win64/win64/conda-update-base--prune.yml
     
 - Build poppler
 
@@ -253,6 +255,9 @@ To::
         LIBS += -L"C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.28.29910/lib/x64"
     }
     
+
+Refer: https://github.com/luffy-yu/python-poppler-qt5/blob/win64/win64/popplerqt5.pro
+   
 Open ``x64 Native Tools Command Prompt for VS 2019``
 
 Enter::
