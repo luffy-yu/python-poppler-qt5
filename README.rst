@@ -36,11 +36,11 @@ https://poppler.freedesktop.org/poppler-0.82.0.tar.xz
 
 git clone https://gitlab.freedesktop.org/poppler/test
 
-e.g. ``C:\Users\luffy\Downloads\test``
+e.g. C:/Users/luffy/Downloads/test
 
 - python-poppler-qt5
 
-e.g. ``C:\Users\luffy\python-poppler-qt5``
+e.g. C:/Users/luffy/python-poppler-qt5
 
 Installation
 ------------
@@ -62,7 +62,7 @@ Just click next all the time
 
 git clone https://github.com/Microsoft/vcpkg.git
 
-e.g. C:\Users\luffy\Downloads\vcpkg
+e.g. C:/Users/luffy/Downloads/vcpkg
 
 Open File Explorer
 
