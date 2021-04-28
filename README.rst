@@ -44,6 +44,8 @@ e.g. ``C:/Users/luffy/Downloads/test``
 
 - python-poppler-qt5
 
+git clone https://github.com/luffy-yu/python-poppler-qt5.git
+
 e.g. ``C:/Users/luffy/Downloads/python-poppler-qt5``
 
 Installation
