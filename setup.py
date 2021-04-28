@@ -2,7 +2,7 @@
 
 project = dict(
     name = 'python-poppler-qt5',
-    version = '0.75.0',
+    version = '0.82.0',
     description = 'A Python binding to Poppler-Qt5',
     long_description = (
         'A Python binding to Poppler-Qt5 that aims for '
@@ -10,9 +10,9 @@ project = dict(
         'Using this module you can access the contents of PDF files '
         'inside PyQt5 applications.'
     ),
-    maintainer = 'Wilbert Berendsen',
-    maintainer_email = 'wbsoft@xs4all.nl',
-    url = 'https://github.com/frescobaldi/python-poppler-qt5',
+    maintainer = 'Wilbert Berendsen;Luffy Yu',
+    maintainer_email = 'wbsoft@xs4all.nl;yuliuchuan@gmail.com',
+    url = 'https://github.com/frescobaldi/python-poppler-qt5;https://github.com/luffy-yu/python-poppler-qt5',
     license = 'LGPL',
     classifiers = [
         'Development Status :: 5 - Production/Stable',
