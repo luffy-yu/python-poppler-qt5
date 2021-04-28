@@ -150,7 +150,7 @@ Configure::
 
 Click Configure
 
-Select VS2019, and enter x64
+Select ``Viusal Studio 16 2019``, and enter platform ``x64``
 
 Set TESTDATADIR to C:/Users/luffy/Downloads/test
 
