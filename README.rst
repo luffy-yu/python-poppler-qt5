@@ -228,7 +228,7 @@ Enter::
     
 Copy files
 
-copy poppler-cpp.dll and poppler-qt5.dll into ``miniconda3\Library\bin``
+copy poppler-cpp.dll and poppler-qt5.dll from ``C:\Program Files\poppler\bin`` into ``miniconda3\Library\bin``
 
 Test
 
