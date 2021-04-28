@@ -3,6 +3,10 @@ Installation Guide in Windows with VS2019
 =========================================
 Updated at April 28, 2021
 
+**This is based on branch sip5.**
+
+**NOTE: Just be careful about all PATH in the followings.**
+
 Prerequisites
 -------------
 
@@ -175,6 +179,37 @@ Enter::
 It will install into ``C:\Program Files\poppler`` if nothing erroneous happens.
 
 - Build python-poppler-qt5
+
+In order to compile, I have made some amendments in project.py
+
+Diff with sip5 branch::
+
+    diff --git a/project.py b/project.py
+    index 17df8da..4974a1b 100644
+    --- a/project.py
+    +++ b/project.py
+    @@ -47,8 +47,8 @@ class PopplerQt5Bindings(PyQtBindings):
+
+         def apply_user_defaults(self, tool):
+             # Set include_dirs, library_dirs and libraries based on pkg-config data
+    -        cflags = self.run_pkg_config('--cflags-only-I').split()
+    -        libs = self.run_pkg_config('--libs').split()
+    +        cflags = '-IC:/Program Files/poppler/include/poppler'
+    +        libs = '-LC:/Program Files/poppler/lib'
+             self.include_dirs.extend(
+                 flag[2:] for flag in cflags if flag.startswith('-I'))
+             self.library_dirs.extend(
+    @@ -60,7 +60,7 @@ class PopplerQt5Bindings(PyQtBindings):
+             if self.poppler_version is not None:
+                 poppler_qt5_version = self.poppler_version
+             else:
+    -            poppler_qt5_version = self.run_pkg_config('--modversion')
+    +            poppler_qt5_version = '0.82.0'
+             poppler_qt5_version = tuple(map(int, poppler_qt5_version.split('.')))
+             python_poppler_qt5_version = self.project.version_str.split('.')
+             format_dict = {
+
+
 
 Switch to ``Anaconda Prompt(miniconda3)`` window
 
