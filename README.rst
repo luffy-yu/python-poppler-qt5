@@ -36,11 +36,11 @@ https://poppler.freedesktop.org/poppler-0.82.0.tar.xz
 
 git clone https://gitlab.freedesktop.org/poppler/test
 
-e.g. C:/Users/luffy/Downloads/test
+e.g. ``C:/Users/luffy/Downloads/test``
 
 - python-poppler-qt5
 
-e.g. C:/Users/luffy/python-poppler-qt5
+e.g. ``C:/Users/luffy/python-poppler-qt5``
 
 Installation
 ------------
@@ -93,7 +93,7 @@ Enter::
 
 Extract poppler-0.82.0.tar.xz
 
-e.g. C:/Users/luffy/Downloads/poppler-0.82.0/poppler-0.82.0
+e.g. ``C:/Users/luffy/Downloads/poppler-0.82.0/poppler-0.82.0``
 
 Edit CMakeLists.txt
 
@@ -151,13 +151,13 @@ Click Configure
 
 Select ``Viusal Studio 16 2019``, and enter platform ``x64``
 
-Set TESTDATADIR to C:/Users/luffy/Downloads/test
+Set ``TESTDATADIR`` to ``C:/Users/luffy/Downloads/test``
 
 Configure
 
 Generate
 
-Edit C:/Users/luffy/miniconda3/Library/include/jmorecfg.h
+Edit ``C:/Users/luffy/miniconda3/Library/include/jmorecfg.h``
 
 From::
 
@@ -183,7 +183,7 @@ Enter::
     cd C:\Users\luffy\python-poppler-qt5
     sip-build
     
-Edit C:/Users/luffy/python-poppler-qt5/build/popplerqt5/popplerqt5.pro
+Edit ``C:/Users/luffy/python-poppler-qt5/build/popplerqt5/popplerqt5.pro``
 
 From::
     
