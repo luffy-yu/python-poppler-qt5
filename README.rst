@@ -93,6 +93,8 @@ Enter::
 
 Extract poppler-0.82.0.tar.xz
 
+e.g. C:/Users/luffy/Downloads/poppler-0.82.0/poppler-0.82.0
+
 Edit CMakeLists.txt
 
 From::
@@ -121,9 +123,6 @@ To::
 
     find_package(freetype REQUIRED)
 
-
-
-e.g. C:\Users\luffy\Downloads\poppler-0.82.0\poppler-0.82.0\
 
 Open ``x64 Native Tools Command Prompt for VS 2019`` as Administrator
 
