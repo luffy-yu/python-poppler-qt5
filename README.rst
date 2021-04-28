@@ -87,7 +87,7 @@ Open the Anaconda Prompt(miniconda3)
 
 Enter::
 
-    conda update -f conda-update-base--prune --prune
+    conda update -f conda-update-base--prune.yml --prune
     
 - Build poppler
 
